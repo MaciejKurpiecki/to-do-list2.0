@@ -31,10 +31,9 @@
 
 .list__removeButton {
     background-color: #ff0000;
-    background-image: url(../images/bin.png);
+
     height: 30px;
     width: 30px;
-    background-size: cover;
     border: none;
     order: 3;
     align-self: center;
@@ -43,17 +42,13 @@
 
 .list__doneButton {
     background-color: green;
+    text-decoration: none;
     width: 30px;
     height: 30px;
     border: none;
     order: 1;
     align-self: center;
     flex-shrink: 0;
-}
-
-.list__doneButton--done {
-    background-image: url(../images/true.png);
-    background-size: contain;
 }
 
 .list__removeButton:hover {

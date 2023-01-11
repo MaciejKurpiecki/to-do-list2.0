@@ -39,10 +39,16 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="list__item${task.done ? " list__item--done" : ""}">
-            <button class="js-done list__doneButton${task.done ? " list__doneButton--done" : ""}"></button> 
-            <button class="js-remove list__removeButton"></button>          
-            <span class="list__task">${task.content}</span>
+            <li class="list__item">
+            <button class="js-done list__doneButton">
+            ${task.done ? "✔️" : ""}
+            </button> 
+            <button class="js-remove list__removeButton">
+            🗑️
+            </button>          
+            <span class="list__task ${task.done ? " list__item--done" : ""}">
+            ${task.content}
+            </span>
                         </li>`;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
