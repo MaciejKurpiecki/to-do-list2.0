@@ -1,0 +1,73 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+}
+
+.list__item {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list__task {
+    flex-grow: 1;
+    order: 2;
+    align-self: center;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__removeButton {
+    background-color: #ff0000;
+    background-image: url(../images/bin.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border: none;
+    order: 3;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.list__doneButton {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border: none;
+    order: 1;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.list__doneButton--done {
+    background-image: url(../images/true.png);
+    background-size: contain;
+}
+
+.list__removeButton:hover {
+    background-color: #fd3c3c;
+}
+
+.list__removeButton:active {
+    background-color: #ff8484;
+}
+
+.list__doneButton:hover {
+    background-color: #009000;
+}
+
+.list__doneButton:active {
+    background-color: #00b900;
+}

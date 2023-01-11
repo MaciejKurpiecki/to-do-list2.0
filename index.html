@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/list.css" rel="stylesheet">
+    <link href="CSS/form.css" rel="stylesheet">
+    <script src="JS/script.js" defer></script>
+    <title>Lista zadań</title>
+</head>
+
+<body class="body">
+    <haeder>
+        <h1>Lista zadań</h1>
+    </haeder>
+    <form class="js-form">
+        <div class="form__container">
+            <h2>Dodaj nowe zadanie</h2>
+        </div>
+        <div class="form__container form__container--input"> <input class="js-newTask form__input"
+                placeholder="Co jest do zrobienia?" autofocus>
+            <button class="form__addButton">Dodaj zadanie</button>
+        </div>
+
+        <div>
+            <div class="form__container">
+                <h2>Lista zadań</h2>
+            </div>
+            <div class="form__container form__container--list">
+                <ul class="js-tasks list"></ul>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
