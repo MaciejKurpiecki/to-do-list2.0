@@ -23,11 +23,13 @@
     flex-grow: 0;
     transition: 1s;
 }
-.form__addButton:hover{
+
+.form__addButton:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.2);
 }
-.form__addButton:active{
+
+.form__addButton:active {
     background-color: hsl(180, 100%, 35%);
 }
 
@@ -43,16 +45,45 @@
     padding: 25px;
 }
 
-@media (max-width: 500px) {
+
+.form__header--tasksList {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.form__allTasksButton {
+    color: teal;
+    border: none;
+    background-color: white;
+    margin: 0 10px;
+}
+
+@media (max-width: 700px) {
     .form__container--input {
         flex-wrap: wrap;
-        flex-basis: 500px;
+        flex-basis: 700px;
         align-self: stretch;
     }
 
     .form__addButton {
         flex-grow: 1;
     }
-}
 
-;
+    .form__header--tasksList {
+        flex-wrap: wrap;
+    }
+
+    .form__allTasksButtons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 700px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .form__allTasksButton {
+        flex-basis: 700px;
+        margin: 5px auto;
+    }
+}
