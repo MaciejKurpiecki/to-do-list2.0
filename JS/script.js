@@ -23,7 +23,6 @@
             },
             ...tasks.slice(taskIndex + 1),
         ];
-        // tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
     const resetInputField = () => {
