@@ -52,7 +52,7 @@
     justify-content: space-between;
 }
 
-.form__allTasksButton {
+.form__allTasksButtons--button {
     color: teal;
     border: none;
     background-color: white;
@@ -82,7 +82,7 @@
         margin-top: 15px;
     }
 
-    .form__allTasksButton {
+    .form__allTasksButtons--button {
         flex-basis: 700px;
         margin: 5px auto;
     }

@@ -29,6 +29,10 @@
     text-decoration: line-through;
 }
 
+.list__item--hidden {
+    display: none;
+}
+
 .list__removeButton {
     background-color: #ff0000;
 
@@ -38,6 +42,7 @@
     order: 3;
     align-self: center;
     flex-shrink: 0;
+    color: white;
 }
 
 .list__doneButton {
@@ -49,6 +54,7 @@
     order: 1;
     align-self: center;
     flex-shrink: 0;
+    color: white;
 }
 
 .list__removeButton:hover {
