@@ -30,7 +30,13 @@
 
         <div>
             <div class="form__container">
-                <h2>Lista zadań</h2>
+                <h2 class="form__header--tasksList">
+                    <span>Lista zadań</span>
+                    <div class="form__allTasksButtons">
+                        <button class="form__allTasksButton js-hideDone">Ukryj ukończone</button>
+                        <button class="form__allTasksButton js-setAllAsDone">Ukończ wszystkie</button>
+                    </div>
+                </h2>
             </div>
             <div class="form__container form__container--list">
                 <ul class="js-tasks list"></ul>
