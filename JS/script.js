@@ -50,9 +50,9 @@
         if (setAllDoneButton) {
             setAllDoneButton.addEventListener("click", setAllAsDone);
         };
-        const hideShowDone = document.querySelector(".js-hideDone");
-        if (hideShowDone) {
-            hideShowDone.addEventListener("click", hideShowTasks);
+        const hideShowDoneButton = document.querySelector(".js-hideDone");
+        if (hideShowDoneButton) {
+            hideShowDoneButton.addEventListener("click", hideShowTasks);
         };
     };
 
