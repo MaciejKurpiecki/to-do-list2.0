@@ -1,5 +1,16 @@
-# To-Do List
+# To-Do List 2.0
 
-**To-Do List** is a website to create your own to-do list. Website allows to add new tasks, mark tasks as completed/not completed and remove tasks form the list.
-
+**To-Do List 2.0** is a personal study project to create to-do list. Website allows to add new tasks, mark tasks as completed/not completed, hide completed tasks and remove tasks form the list.
+Website has been reworked with immutable arrays.
+## Demo
 https://maciejkurpiecki.github.io/To-Do-List/
+
+![gif](Images/presentation.gif/)
+## Technologies
+- HTML
+- CSS 
+- BEM
+- Flex
+- media queries
+- JavaScript
+- ES6
