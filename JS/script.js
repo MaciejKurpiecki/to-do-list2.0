@@ -45,7 +45,7 @@
         inputField.value = '';
         inputField.focus();
     };
-    const bindDisplayButtons = () => {
+    const bindAllTasksButtons = () => {
         const setAllDoneButton = document.querySelector(".js-setAllAsDone");
         if (setAllDoneButton) {
             setAllDoneButton.addEventListener("click", setAllAsDone);
@@ -101,7 +101,7 @@
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button class="form__button js-setAllAsDone"
-        ${tasks.every(({done})=>done) ? "disabled" : ""}>
+        ${tasks.every(({ done }) => done) ? "disabled" : ""}>
         Ukończ wszystkie
         </button>
         `;
@@ -110,7 +110,7 @@
     const render = () => {
         renderTasks();
         renderButtons();
-        bindDisplayButtons();
+        bindAllTasksButtons();
         bindEvents();
     };
     const onFormSubmit = (event) => {
