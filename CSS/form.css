@@ -55,7 +55,7 @@
 .form__button {
     color: teal;
     border: none;
-    background-color: white;
+    background-color: transparent;
     padding: 0 10px;
     font-size: 20px;
 }
