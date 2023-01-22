@@ -11,6 +11,8 @@
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/list.css" rel="stylesheet">
     <link href="CSS/form.css" rel="stylesheet">
+    <link href="CSS/buttons.css" rel="stylesheet">
+    <link href="CSS/section.css" rel="stylesheet">
     <script src="JS/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,26 +26,28 @@
         <h1>Lista zadań</h1>
     </header>
     <form class="js-form">
-        <div class="form__container">
-            <h2>Dodaj nowe zadanie</h2>
-        </div>
-        <div class="form__container form__container--input"> <input class="js-newTask form__input"
-                placeholder="Co jest do zrobienia?" autofocus>
-            <button class="form__addButton">Dodaj zadanie</button>
-        </div>
+        <section>
+            <div class="section__container">
+                <h2>Dodaj nowe zadanie</h2>
+            </div>
+            <div class="form__container form__container--input"> <input class="js-newTask form__input"
+                    placeholder="Co jest do zrobienia?" autofocus>
+                <button class="form__addButton">Dodaj zadanie</button>
+            </div>
+        </section>
 
-        <div>
-            <div class="form__container">
-                <h2 class="form__header--tasksList">
-                    <span>Lista zadań</span>
-                    <span class="form__allTasksButtons js-allTasksButtons">
-                    </span>
-                </h2>
+        <section>
+            <div>
+                <div class="section__container section__container--taskList">
+                    <h2> Lista zadań </h2>
+                    <div class="allTasksButtons js-allTasksButtons">
+                    </div>
+                </div>
+                <div class="section__container section__container--list">
+                    <ul class="js-tasks list"></ul>
+                </div>
             </div>
-            <div class="form__container form__container--list">
-                <ul class="js-tasks list"></ul>
-            </div>
-        </div>
+        </section>
     </form>
 </body>
 

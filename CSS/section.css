@@ -1,0 +1,25 @@
+.section__container {
+    background-color: #ffffff;
+    padding: 10px 25PX;
+    background-color: #FFFFFF;
+    gap: 20px;
+    margin: 2px;
+}
+
+.section__container--list {
+    padding: 25px;
+}
+
+
+.section__container--taskList {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .section__container--taskList {
+        flex-wrap: wrap;
+    }
+}

@@ -41,55 +41,13 @@
     border: 1px solid #ccc;
 }
 
-.form__container--list {
-    padding: 25px;
-}
-
-
-.form__header--tasksList {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.form__button {
-    color: teal;
-    border: none;
-    background-color: transparent;
-    padding: 0 10px;
-    font-size: 20px;
-}
-
-.form__button:disabled {
-    color: hsl(0, 0%, 50%);
-}
-
 @media (max-width: 700px) {
     .form__container--input {
         flex-wrap: wrap;
-        flex-basis: 700px;
-        align-self: stretch;
     }
 
     .form__addButton {
         flex-basis: 100%;
-        flex-shrink: 1;
     }
 
-    .form__header--tasksList {
-        flex-wrap: wrap;
-    }
-
-    .form__allTasksButtons {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .form__button {
-        flex-basis: 700px;
-        margin: 20px auto;
-    }
 }

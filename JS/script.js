@@ -95,10 +95,10 @@
         };
 
         allTasksButtons.innerHTML = `
-        <button class="form__button js-hideDone">
+        <button class="button js-hideDone">
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
-        <button class="form__button js-setAllAsDone"
+        <button class="button js-setAllAsDone"
         ${tasks.every(({ done }) => done) ? "disabled" : ""}>
         Ukończ wszystkie
         </button>
